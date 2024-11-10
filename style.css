@@ -1,0 +1,508 @@
+@font-face {
+    font-family: 'dS'; /* Custom name for the font */
+    src: url('./DancingScript-VariableFont_wght.ttf') format('truetype');     
+    font-weight: normal; 
+    font-style: normal; 
+}
+
+@font-face {
+    font-family: 'Pa'; /* Custom name for the font */
+    src: url('./Pacifico-Regular.ttf') format('truetype');     
+    font-weight: normal; 
+    font-style: normal; 
+}
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: #B18878;
+    font-family: Arial, sans-serif;
+}
+
+#main {
+    height: 100%;
+    width: 100%;
+}
+
+#page1 {
+    background-color: rgba(255, 255, 255, 0.051);
+    padding: 20px;
+}
+
+#nav {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 100px;
+    padding: 20px;
+}
+
+#nav h1 {
+    font-family: Pa;
+    font-size: 2.5em;
+    color: rgba(255, 255, 255, 0.9);
+    text-align: center;
+}
+
+#centerContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.left, .center, .right {
+    flex: 1;
+    min-width: 280px;
+    max-width: 400px;
+    padding: 10px;
+    text-align: center;
+}
+
+.left img {
+    max-width: 100%;
+    height: auto;
+    margin-top: -200px;
+}
+
+.left p {
+    background-color: rgba(255, 255, 255, 0.14);
+    padding: 15px;
+    border-radius: 10px;
+    color: white;
+    font-family: "dS", cursive;
+    font-size: 1.6em;
+    margin-top: -85px;
+}
+
+.center img {
+    max-width: 100%;
+    height: 55vw;
+    object-fit: cover;
+    margin-top: -20vw;
+}
+
+.right h1 {
+    font-family: Kinta, sans-serif;
+    font-size: 1.8em;
+    color: rgba(144, 11, 11, 0.7);
+}
+
+.right .line {
+    width: 60%;
+    height: 2px;
+    background-color: rgba(49, 47, 47, 0.329);
+    margin: 10px auto;
+}
+
+.right p {
+    background-color: rgba(255, 255, 255, 0.14);
+    padding: 15px;
+    border-radius: 10px;
+    color: white;
+    font-family: Kinta, sans-serif;
+    font-size: 1.6em;
+    margin-top: 20px;
+    margin-left: 50px;
+    max-width: 300px;
+}
+
+ 
+@media (max-width: 1024px) {
+    #nav h1 {
+        font-size: 2em;
+    }
+
+    .left p, .right p {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 768px) {
+    #nav h1 {
+        font-size: 1.8em;
+    }
+
+    .left img, .center img {
+        margin-top: 10px;
+    }
+
+    .left p, .right p {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 680px) {
+    #nav h1 {
+        font-size: 1.5em;
+    }
+
+    .left p, .right p {
+        font-size: 0.8em;
+    }
+
+    .center img {
+        margin-top: -140px;
+       height: 370px;
+       margin-left: -20px;
+    }
+
+    #centerContainer {
+        flex-direction: column-reverse;
+    }
+    
+    .left img{
+        margin-top:-70px ;
+        height: 200px;
+
+    }
+    .left p{
+        margin-top: -50px;
+        font-size: 18px;
+    }
+    .right {
+       
+        display: none;
+
+    }
+    
+} 
+
+
+#page2 {
+    height: 130%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.051);
+    /* border-bottom: 1px solid rgba(0, 0, 0, 0.315); */
+    padding-top: 35px;
+}
+
+
+
+
+#nav2{
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    /* background-color: white; */
+    align-items: center;
+
+    
+}
+#nav2 h1{
+    font-family: ds;  
+    color: rgba(240, 230, 230, 0.812);
+    font-size: 70px;
+}
+
+.container {
+    height: calc(100% - 100px);
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.imgg {
+    width: calc(33.33% - 20px); 
+    height: 300px;
+    position: relative; /* Ensure the text is positioned inside the container */
+    flex: 0 0 auto;
+}
+
+.imgg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 1% 30%;
+    border-radius: 20px;
+    
+}
+
+.imgg h3 {
+    position: absolute;
+    bottom: 10px; /* Position at the bottom */
+    left: 50%;
+    transform: translateX(-50%); /* Center horizontally */
+    background-color: #b188785e;
+
+    color: white; /* Text color */
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0;
+    font-family: dS;
+}
+
+#page2 p{
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.14);
+    padding: 30px;
+    margin-top: 20px;
+    border-radius: 10px;
+    color: white;
+    font-family: kinta;
+    font-size: 22px;
+    text-align: center;
+    line-height: 25px;
+    margin-left: 300px;
+}
+
+
+@media (max-width: 1200px) {
+    .container {
+        gap: 20px;
+    }
+    #page2 p {
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 992px) {
+    .imgg {
+        width: calc(50% - 20px); /* Adjust image container width for medium screens */
+    }
+    #nav2 h1 {
+        font-size: 50px; /* Reduce heading size */
+    }
+    #page2 p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .imgg {
+        width: calc(100% - 20px); /* Make images full width for smaller screens */
+    }
+    #nav2 {
+        height: 80px;
+    }
+    #nav2 h1 {
+        font-size: 40px;
+    }
+    #page2 p {
+        font-size: 15px;
+        padding: 20px;
+        width: 80%;
+    }
+}
+
+@media (max-width: 680px) {
+    #nav2 {
+        height: 70px;
+    }
+    #nav2 h1 {
+        font-size: 35px;
+        margin-top: -100px;
+    }
+    #page2 p {
+        font-size: 18px;
+        padding: 15px;
+        width: 90%;
+    }
+    .imgg {
+        width: 100%; /* Full width for very small screens */
+    }
+    .container{
+        margin-top: -80px;
+        gap: 40px;
+    }
+}
+#page3 {
+    height: 130vh;
+    width: 100vw;
+    background-color: rgba(255, 255, 255, 0.051);
+    padding-top: 16vh; /* 20px converted to 2vh for consistent spacing */
+}
+
+.lefft {
+    height: 100%;
+    width: 50vw; /* 50% of the viewport width */
+}
+
+.lefft h1 {
+    text-align: center;
+    margin-top: 10vh; /* 100px converted to 10vh */
+    font-family: "dS";
+    color: rgba(228, 220, 220, 0.771);
+    font-size: 8vh; /* 60px converted to 6vh */
+}
+
+.lefft p {
+    width: 70%; /* Keeping percentage for flexibility */
+    background-color: rgba(255, 255, 255, 0.14);
+    padding: 3vh; /* 30px converted to 3vh */
+    margin-top: 2vh; /* 20px converted to 2vh */
+    border-radius: 1vh; /* 10px converted to 1vh */
+    color: white;
+    font-family: "Kinta";
+    font-size: 4vh; /* 30px converted to 3vh */
+    margin-left: 10vw; /* 100px converted to 10vw */
+}
+
+.rightt {
+    height: 100%;
+    width: 50vw; /* 50% of the viewport width */
+}
+
+.rightt img {
+    width: 80%; /* Keeping percentage for image size */
+    height: 70%; /* Keeping percentage for aspect ratio */
+    object-fit: cover;
+    object-position: 1% 30%;
+    border-radius: 2vh; /* 20px converted to 2vh */
+    margin-top: 10vh; /* 100px converted to 10vh */
+}
+
+.lefft img {
+    height: 60vh; 
+    margin-left: 100px;
+    
+}
+
+/* Default styles for large screens (above 1200px) */
+#page3 {
+    height: 130vh;
+    width: 100vw;
+    background-color: rgba(255, 255, 255, 0.051);
+    padding-top: 26vh;
+}
+
+.lefft {
+    height: 100%;
+    width: 50vw;
+}
+
+.lefft h1 {
+    text-align: center;
+    margin-top: 10vh;
+    font-family: "ds";
+    color: rgba(228, 220, 220, 0.771);
+    font-size: 8vh;
+}
+
+.lefft p {
+    width: 70%;
+    background-color: rgba(255, 255, 255, 0.14);
+    padding: 3vh;
+    margin-top: 2vh;
+    border-radius: 1vh;
+    color: white;
+    font-family: "Kinta";
+    font-size: 4vh;
+    margin-left: 10vw;
+}
+
+.rightt {
+    height: 100%;
+    width: 50vw;
+}
+
+.rightt img {
+    width: 80%;
+    height: 70%;
+    object-fit: cover;
+    object-position: 1% 30%;
+    border-radius: 2vh;
+    margin-top: 10vh;
+}
+
+.lefft img {
+    height: 60vh;
+    margin-left: 10vw;
+}
+
+
+#message{
+    display: flex; gap: 30px; height: 100%;
+}
+/* Responsive styles for medium screens (between 768px and 1200px) */
+@media (max-width: 1200px) {
+    .lefft, .rightt {
+        width: 100vw;
+    }
+    .lefft p, .rightt img {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .lefft img {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* Responsive styles for small screens (below 768px) */
+@media (max-width: 768px) {
+    #page3 {
+        padding-top: 10vh;
+    }
+    .lefft h1 {
+        font-size: 6vh; /* Reduce font size for smaller screens */
+    }
+    .lefft p {
+        font-size: 3.5vh;
+        width: 90%; /* Increase width for better readability */
+    }
+    .rightt img {
+        width: 90%;
+        height: auto; /* Maintain aspect ratio */
+        margin-top: 5vh;
+    }
+    .lefft img {
+        height: 50vh;
+    }
+}
+
+/* Responsive styles for very small screens (below 480px) */
+@media (max-width: 680px) {
+    #page3{
+        margin-top: 200%;
+        padding-top: -16px;
+    }
+    .lefft h1 {
+        font-size: 5vh;
+        /* margin-top: -3px; */
+        /* margin-top: 5vh; */
+    }
+    .lefft p {
+        font-size: 3vh;
+        padding: 2vh;
+        width: 90%;
+    }
+
+    .rightt img {
+        width: 80%;
+        height: 100%;
+        border-radius: 1vh;
+        margin-top: -80px;
+        margin-left: 50px;
+        
+    }
+    .lefft img {
+        height: 40vh;
+        margin-left: 100px;
+
+
+    }
+    #message{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
