@@ -327,7 +327,7 @@ html, body {
     height: 130vh;
     width: 100vw;
     background-color: rgba(255, 255, 255, 0.051);
-    padding-top: 16vh; /* 20px converted to 2vh for consistent spacing */
+    padding-top: 36vh; /* 20px converted to 2vh for consistent spacing */
 }
 
 .lefft {
@@ -376,56 +376,7 @@ html, body {
 }
 
 /* Default styles for large screens (above 1200px) */
-#page3 {
-    height: 130vh;
-    width: 100vw;
-    background-color: rgba(255, 255, 255, 0.051);
-    padding-top: 26vh;
-}
 
-.lefft {
-    height: 100%;
-    width: 50vw;
-}
-
-.lefft h1 {
-    text-align: center;
-    margin-top: 10vh;
-    font-family: "ds";
-    color: rgba(228, 220, 220, 0.771);
-    font-size: 8vh;
-}
-
-.lefft p {
-    width: 70%;
-    background-color: rgba(255, 255, 255, 0.14);
-    padding: 3vh;
-    margin-top: 2vh;
-    border-radius: 1vh;
-    color: white;
-    font-family: "Kinta";
-    font-size: 4vh;
-    margin-left: 10vw;
-}
-
-.rightt {
-    height: 100%;
-    width: 50vw;
-}
-
-.rightt img {
-    width: 80%;
-    height: 70%;
-    object-fit: cover;
-    object-position: 1% 30%;
-    border-radius: 2vh;
-    margin-top: 10vh;
-}
-
-.lefft img {
-    height: 60vh;
-    margin-left: 10vw;
-}
 
 
 #message{
@@ -472,17 +423,20 @@ html, body {
 @media (max-width: 680px) {
     #page3{
         margin-top: 200%;
-        padding-top: -16px;
+        display: none;
+        padding-top: 200px;
     }
     .lefft h1 {
         font-size: 5vh;
-        /* margin-top: -3px; */
+        margin-top: -3px;
         /* margin-top: 5vh; */
+        /* display: none; */
     }
     .lefft p {
         font-size: 3vh;
         padding: 2vh;
         width: 90%;
+        /* display: none; */
     }
 
     .rightt img {
